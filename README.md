@@ -1,4 +1,4 @@
-# PS4 9.00 Kernel Exploit
+# PS4 9.00 Kernel Exploit - GoldHEN 2.4b17.3
 ---
 ## Summary
 In this project you will find an implementation that tries to make use of a filesystem bug for the Playstation 4 on firmware 9.00.
@@ -46,5 +46,6 @@ If you encounter issues with certain payloads you should report your issues to t
 ## Special Thanks
 - [Andy Nguyen](https://twitter.com/theflow0)
 - [sleirsgoevy](https://twitter.com/sleirsgoevy) - [9.00 Webkit exploit](https://github.com/sleirsgoevy/bad_hoist/tree/9.00)
+- [NanoSpeedGamer](https://youtube.com/@NanospeedGamer)
 
 ## Host by AcerKeyt69
