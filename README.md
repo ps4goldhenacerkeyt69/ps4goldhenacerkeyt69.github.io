@@ -1,4 +1,4 @@
-# PS4 9.00 Kernel Exploit - GoldHEN 2.4b18
+# PS4 9.00 Kernel Exploit - GoldHEN 2.4b18.3
 ---
 ## Summary
 In this project you will find an implementation that tries to make use of a filesystem bug for the Playstation 4 on firmware 9.00.
