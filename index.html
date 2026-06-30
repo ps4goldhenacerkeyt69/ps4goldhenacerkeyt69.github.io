@@ -1,99 +1,95 @@
-<html manifest="acerk.cache">
-    
+<!DOCTYPE html>
+<html>
 <head>
-    <title>PS4GoldHEN Host by AcerKeyt69</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="icon.png">
+    <title>PS4 AutoExploit Host by AcerKeyt69</title>
+    <link rel="icon" type="image/png" href="icon.png">
     <style>
-        body 
-        {
+   
+        body {
             background-image: url("host.jpg");
-            height: 80%;
             background-position: center;
-            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Arabic', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
         }
-
-        .loader 
-        {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin: -75px 0 0 -75px;
-            border: 10px solid #1f1e1e;
-            border-radius: 50%;
-            border-top: 10px solid #d40606;
-            border-left: 10px solid #d40606;
-            width: 120px;
-            height: 120px;
-            animation: spin 1s linear infinite;
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(30, 30, 30, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
-
-        @keyframes spin 
-        {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3d3d3d;
+            padding-bottom: 15px;
         }
-
-        .info 
-        {
-            overflow: hidden;
-            position: fixed;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-
-            font-size: 45px;
-            font-family: sans-serif;
-            color: #d40606;
-
-            transform: translate(-50%, -50%);
+        .brand-number {
+            color: #ff5722;
+            font-size: 1.5em;
+            font-weight: bold;
         }
-
-        .j {
-            font-size: 15px;
-            color: #d40606;
+        .brand-text {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        h1 {
+            margin: 0;
+            padding: 10px 0;
+            font-size: 28px;
+            text-shadow: 0.1em 0.1em 0.2em black;
+        }
+        #console {
+            font-family: 'logging';
         }
     </style>
-     
-     <script>
-        window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Cargando Cache";};
-        window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-        window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Cache almacenado exitosamente";setTimeout(function(){document.getElementById("progress").innerHTML="Desconecta el Internet y Abre de nuevo el navegador"; }, 2000);};
-        window.applicationCache.onnoupdate=function(){setTimeout(webkitExploit,500);};
-	    window.applicationCache.onerror=function(){setTimeout(webkitExploit,500);};
-
-        function allset() 
-        {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("allset").style.display = "block";
+    <title>PS4 AutoExploit Host by AcerKeyt69</title>
+    <script>
+        function showMessage(msg) {
+            document.getElementById("message").innerHTML = msg;
         }
     </script>
-    <script src="exploit.js"></script>
+    <script>
+        if (window.applicationCache.status=='0')
+        {
+          window.location.replace("cache.html");
+        }
+    </script>
+    <script src="loader.js"></script>
+    <script type=module src="alert.js"></script>
 </head>
-
 <body>
-    <h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow;'></h1><br>
-    <div id="loader" class="loader"></div>
-    <div id="allset" class="info" style="display:none;">Exploit Cargado Satisfactoriamente!</div>
-	<a href="https://ps4goldhenacerkeyt69.github.io/psfree/" style="
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    padding: 5px 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: block;
-    text-align: center;
-">PSFree - Lapse Exploit</a>
+    <div id='console'></div>
+    <br><h1><center><font style='color:#fff;font-size:46px;font-weight:bold;margin:0 0 0 0.0;text-shadow:3px 2px #3d3939;'><i>PS4 GoldHEN AutoExploit</i></font></center></h1>
+    <div>
+        <center><font style='color:#fff;font-size:26px;font-weight:bold;margin:0 0 0 0.0;text-shadow:3px 2px #3d3939;'><i>Host by AcerKeyt69</i></font></center>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div id="message" style='color:#fff;font-size:35px;font-weight:bold;margin:0 0 0 0.0;text-shadow:3px 2px #3d3939;'>Cargando <font color="#ee596f">Exploit</font></div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <div style="background-color:#032140;color:white;position:fixed;left:0;bottom:-0px;width:100%;text-align:center;">
+    <font style='color:#87FF33'>Developer: </font><a href="https://twitter.com/AcerKeyt69" style='font-size:20px;text-align:center;color:yellow;'>@AcerKeyt69</a> - &nbsp;<font style="font-size: 20px";style='color:#87FF33'>Pass = <span style="color:green" id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span style="color:red" id=failCounter></span></font>
+    <br><font style='color:#87FF33'>Agradecimientos especiales a </font>todos los colaboradores de la scene de PS4<br>
+</div>
+    <script>
+        if (localStorage.passcount == null || localStorage.passcount == undefined) localStorage.passcount = 0;
+        if (localStorage.passCounter == null || localStorage.passCounter == undefined) {
+          passCounter.innerHTML = localStorage.passcount;
+        }
+        if (localStorage.failcount == null || localStorage.failcount == undefined) localStorage.failcount = 0;
+        if (localStorage.failCounter == null || localStorage.failCounter == undefined) {
+          failCounter.innerHTML = localStorage.failcount;
+        }
+    </script>
 </body>
-
 </html>
