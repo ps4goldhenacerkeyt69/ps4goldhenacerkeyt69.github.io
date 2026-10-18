@@ -1,99 +1,102 @@
-<html manifest="acerk.cache">
-    
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>PS4GoldHEN Host by AcerKeyt69</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" href="icon.png">
+
     <style>
-        body 
-        {
-            background-image: url("host.jpg");
-            height: 80%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
-        .loader 
-        {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin: -75px 0 0 -75px;
-            border: 10px solid #1f1e1e;
-            border-radius: 50%;
-            border-top: 10px solid #d40606;
-            border-left: 10px solid #d40606;
-            width: 120px;
-            height: 120px;
-            animation: spin 1s linear infinite;
+        body{
+            background: #1b222c;
+            background: linear-gradient(135deg, #161c24, #202938);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
-        @keyframes spin 
-        {
-            0% {
-                transform: rotate(0deg);
-            }
+        h1{
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 3.5rem;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(0, 150, 255, 0.5);
 
-            100% {
-                transform: rotate(360deg);
-            }
+            position: relative;
+            top: -45px;
         }
 
-        .info 
-        {
-            overflow: hidden;
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .exploit-btn{
+            text-decoration: none;
+            color: white;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 18px;
+            text-align: center;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .exploit-btn:hover{
+            border-color: #0099ff;
+            box-shadow: 0 0 20px #0099ff,
+                        0 0 40px rgba(0,153,255,0.5);
+            color: #66c2ff;
+            transform: translateY(-3px);
+        }
+
+        footer{
             position: fixed;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-
-            font-size: 45px;
-            font-family: sans-serif;
-            color: #d40606;
-
-            transform: translate(-50%, -50%);
-        }
-
-        .j {
-            font-size: 15px;
-            color: #d40606;
+            bottom: 15px;
+            font-size: 1rem;
+            color: #8a8a8a;
         }
     </style>
-     
-     <script>
-        window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Cargando Cache";};
-        window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-        window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Cache almacenado exitosamente";setTimeout(function(){document.getElementById("progress").innerHTML="Desconecta el Internet y Abre de nuevo el navegador"; }, 2000);};
-        window.applicationCache.onnoupdate=function(){setTimeout(webkitExploit,500);};
-	    window.applicationCache.onerror=function(){setTimeout(webkitExploit,500);};
-
-        function allset() 
-        {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("allset").style.display = "block";
-        }
-    </script>
-    <script src="exploit.js"></script>
 </head>
 
 <body>
-    <h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow;'></h1><br>
-    <div id="loader" class="loader"></div>
-    <div id="allset" class="info" style="display:none;">Exploit Cargado Satisfactoriamente!</div>
-	<a href="https://ps4goldhenacerkeyt69.github.io/autoexploit/" style="
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    padding: 5px 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: block;
-    text-align: center;
-">GoldHEN AutoExploit</a>
-</body>
 
+    <h1>PS4 Kernel Exploits</h1>
+
+    <div class="container">
+        <a class="exploit-btn" href="https://ps4goldhenacerkeyt69.github.io/autoexploit">
+            AutoExploit 9.00
+        </a>
+
+        <a class="exploit-btn" href="https://ps4goldhenacerkeyt69.github.io/cssexploit">
+            CSSFontFace 11.02
+        </a>
+
+        <a class="exploit-btn" href="https://ps4goldhenacerkeyt69.github.io/lapse">
+            Lapse Exploit 12.00
+        </a>
+
+        <a class="exploit-btn" href="https://ps4goldhenacerkeyt69.github.io/polpno">
+            AutoExploit 13.52
+        </a>
+    </div>
+
+    <footer>
+        Host by AcerKeyt69
+    </footer>
+
+</body>
 </html>
